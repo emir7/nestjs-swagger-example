@@ -3,7 +3,7 @@ import { ApiQuery } from '@nestjs/swagger';
 
 import { ExampleQueryDto } from '../dto/example-query.dto';
 
-@Controller('example')
+@Controller()
 export class ExampleController {
   @Get()
   @ApiQuery({ type: ExampleQueryDto })
